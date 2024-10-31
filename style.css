@@ -1,112 +1,86 @@
-/* Basic styling for the navigation bar */
-body {
-  font-family: Arial, sans-serif;
+/* Basic reset */
+* {
   margin: 0;
   padding: 0;
-  background-color: #f0f0f5;
+  box-sizing: border-box;
 }
 
-.navbar {
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7e5e5; /* Light pink background */
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  background-color: #ffc0cb; /* Baby pink background */
-  padding: 14px 20px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
 }
 
-.navbar-title {
-  font-size: 18px;
-  font-weight: bold;
-  color: #333;
-  text-align: right;
-}
-
-.navbar a {
-  color: #333;
-  text-decoration: none;
-}
-
-.navbar a:hover {
-  color: white;
-}
-
-/* Dropdown container styling */
-.dropdown {
-  position: relative;
-}
-
-.dropdown .dropbtn {
-  font-size: 16px;
-  color: #333;
-  background-color: #ffc0cb;
-  border: none;
-  cursor: pointer;
-  padding: 12px 20px;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.3s;
-}
-
-.dropdown .dropbtn:hover {
-  background-color: #ff99aa; /* Darker pink for hover effect */
-  color: white;
-}
-
-/* Dropdown content styling */
-.dropdown-content {
-  display: none;
-  position: absolute;
+/* Container for the split layout */
+.container {
+  display: flex;
+  max-width: 1200px;
   background-color: #fff;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
+  border-radius: 10px;
   overflow: hidden;
-  z-index: 1;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
 }
 
-.dropdown-content a {
-  color: #333;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  transition: background-color 0.3s;
-}
-
-.dropdown-content a:hover {
-  background-color: #ff99aa;
-  color: white;
-}
-
-/* Show dropdown content on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* Introduction Section Styling */
-.intro-section {
-  display: flex;
-  align-items: center;
+/* Left text section */
+.text-section {
+  flex: 1;
   padding: 50px;
   background-color: #fff;
 }
 
-.profile-pic {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin-right: 30px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+.text-section .logo img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
 }
 
-.intro-text h1 {
-  font-size: 48px;
+.text-section h1 {
+  font-size: 36px;
   color: #333;
-  margin: 0;
+  margin-bottom: 15px;
 }
 
-.intro-text p {
-  font-size: 20px;
+.text-section p {
+  font-size: 18px;
   color: #666;
-  margin-top: 10px;
+  line-height: 1.6;
 }
+
+/* Right image section */
+.image-section {
+  flex: 1;
+  background-color: #fde7e7; /* Soft peach background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-section img {
+  max-width: 80%;
+  height: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .text-section, .image-section {
+    padding: 30px;
+  }
+
+  .text-section h1 {
+    font-size: 28px;
+  }
+
+  .text-section p {
+    font-size: 16px;
+  }
+}
+
