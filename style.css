@@ -12,10 +12,12 @@ body {
 
 /* Navbar styles */
 .navbar {
-  background-color: rgba(255, 179, 179, 0.9); /* Semi-transparent light pink */
+  background-color: #f7e5e5; /* Same color as the background */
   padding: 10px;
-  text-align: center;
-  position: relative; /* Needed for dropdown positioning */
+  position: absolute; /* Position it absolutely */
+  top: 10px; /* Adjust as needed */
+  left: 10px; /* Adjust as needed */
+  z-index: 1; /* Ensure it stays above other content */
 }
 
 .navbar ul {
@@ -31,7 +33,7 @@ body {
 
 .navbar a {
   text-decoration: none;
-  color: #333;
+  color: #333; /* Dark color for text */
   font-size: 18px;
 }
 
@@ -43,7 +45,7 @@ body {
 .dropdown-content {
   display: none;
   position: absolute; /* Position dropdown relative to parent */
-  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   z-index: 1; /* Ensure it sits above other content */
 }
@@ -55,7 +57,7 @@ body {
 .dropdown-content a {
   display: block; /* Make dropdown links stack vertically */
   padding: 10px;
-  color: #333;
+  color: #333; /* Dark color for dropdown text */
   text-align: left; /* Align text to the left */
 }
 
@@ -73,6 +75,7 @@ body {
   overflow: hidden;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   width: 90%;
+  margin: 60px auto 0; /* Adjust margin to accommodate navbar */
 }
 
 /* Left text section */
