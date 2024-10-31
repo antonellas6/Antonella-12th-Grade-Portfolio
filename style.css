@@ -15,6 +15,33 @@ body {
   margin: 0;
 }
 
+/* Navbar styles */
+.navbar {
+  background-color: #ffb3b3; /* Light pink */
+  padding: 10px;
+  text-align: center;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+}
+
+.navbar a:hover {
+  color: #ff6f61; /* A slightly darker shade on hover */
+}
+
 /* Container for the split layout */
 .container {
   display: flex;
@@ -82,30 +109,4 @@ body {
   .text-section p {
     font-size: 16px;
   }
-}
-
-.navbar {
-  background-color: #ffb3b3; /* Light pink */
-  padding: 10px;
-  text-align: center;
-}
-
-.navbar ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.navbar li {
-  display: inline;
-  margin: 0 15px;
-}
-
-.navbar a {
-  text-decoration: none;
-  color: #333;
-  font-size: 18px;
-}
-
-.navbar a:hover {
-  color: #ff6f61; /* A slightly darker shade on hover */
 }
