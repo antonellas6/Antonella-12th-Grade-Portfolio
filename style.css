@@ -82,3 +82,31 @@ body {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+/* Introduction Section Styling */
+.intro-section {
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  background-color: #fff;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-right: 30px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.intro-text h1 {
+  font-size: 48px;
+  color: #333;
+  margin: 0;
+}
+
+.intro-text p {
+  font-size: 20px;
+  color: #666;
+  margin-top: 10px;
+}
