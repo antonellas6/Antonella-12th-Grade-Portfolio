@@ -14,10 +14,10 @@ body {
 .navbar {
   background-color: #f7e5e5; /* Same color as the background */
   padding: 10px;
-  position: absolute; /* Position it absolutely */
-  top: 10px; /* Adjust as needed */
-  left: 10px; /* Adjust as needed */
-  z-index: 1; /* Ensure it stays above other content */
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
 }
 
 .navbar ul {
@@ -27,43 +27,43 @@ body {
 
 .navbar li {
   display: inline-block;
-  position: relative; /* Needed for dropdown positioning */
+  position: relative;
   margin: 0 15px;
 }
 
 .navbar a {
   text-decoration: none;
-  color: #333; /* Dark color for text */
+  color: #333;
   font-size: 18px;
 }
 
 .navbar a:hover {
-  color: #ff6f61; /* A slightly darker shade on hover */
+  color: #ff6f61;
 }
 
 /* Dropdown styles */
 .dropdown-content {
   display: none;
-  position: absolute; /* Position dropdown relative to parent */
-  background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.9);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  z-index: 1; /* Ensure it sits above other content */
+  z-index: 1;
 }
 
 .dropdown:hover .dropdown-content {
-  display: block; /* Show dropdown on hover */
+  display: block;
 }
 
 .dropdown-content a {
-  display: block; /* Make dropdown links stack vertically */
+  display: block;
   padding: 10px;
-  color: #333; /* Dark color for dropdown text */
-  text-align: left; /* Align text to the left */
+  color: #333;
+  text-align: left;
 }
 
 .dropdown-content a:hover {
-  background-color: #ff6f61; /* Change background on hover */
-  color: #fff; /* Change text color on hover */
+  background-color: #ff6f61;
+  color: #fff;
 }
 
 /* Container for the split layout */
@@ -75,10 +75,9 @@ body {
   overflow: hidden;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   width: 90%;
-  margin: 60px auto 0; /* Adjust margin to accommodate navbar */
+  margin: 60px auto 0;
 }
 
-/* Left text section */
 .text-section {
   flex: 1;
   padding: 50px;
@@ -103,10 +102,9 @@ body {
   line-height: 1.6;
 }
 
-/* Right image section */
 .image-section {
   flex: 1;
-  background-color: #fde7e7; /* Soft peach background */
+  background-color: #fde7e7;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -115,6 +113,67 @@ body {
 .image-section img {
   max-width: 80%;
   height: auto;
+}
+
+/* About Me Styles */
+.about-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff0f5;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(255, 133, 162, 0.3);
+}
+
+.about-header {
+  text-align: center;
+  font-size: 2.5em;
+  color: #ff85a2;
+  margin-bottom: 10px;
+}
+
+.about-intro {
+  padding: 15px;
+  font-size: 1.1em;
+  color: #5f5f5f;
+}
+
+.about-basics table {
+  width: 100%;
+  margin-top: 15px;
+  border-collapse: collapse;
+}
+
+.about-basics th, .about-basics td {
+  padding: 10px 12px;
+  border: 1px solid #ffd1dc;
+  text-align: left;
+}
+
+.about-basics th {
+  background-color: #ffdee8;
+  color: #ff85a2;
+}
+
+.about-basics td {
+  background-color: #fff;
+}
+
+.about-photo {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.about-photo img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(255, 133, 162, 0.4);
+}
+
+.about-photo p {
+  color: #ff85a2;
+  font-style: italic;
 }
 
 /* Responsive adjustments */
