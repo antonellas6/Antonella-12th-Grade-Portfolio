@@ -199,9 +199,9 @@ body {
     max-width: 150px;
   }
 
-  .resume-container {
+.resume-container {
   text-align: center;
-  margin-top: 80px; /* Adjust for the navbar */
+  margin-top: 150px; /* Adjust as needed to center vertically */
 }
 
 .resume-header h1 {
@@ -224,4 +224,3 @@ body {
   background-color: #ff85a2;
 }
 
-}
