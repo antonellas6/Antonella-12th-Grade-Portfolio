@@ -169,11 +169,13 @@ body {
   height: auto;
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(255, 133, 162, 0.4);
+  width: 200px
 }
 
 .about-photo p {
   color: #ff85a2;
   font-style: italic;
+  width: 200px
 }
 
 /* Responsive adjustments */
