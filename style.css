@@ -199,19 +199,25 @@ body {
     max-width: 150px;
   }
 
+/* Centering and styling for resume page */
 .resume-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height */
   text-align: center;
-  margin-top: 150px; /* Adjust as needed to center vertically */
 }
 
 .resume-header h1 {
   font-size: 2.5em;
-  color: #ff85a2;
+  color: #ff85a2; /* Soft pink */
   margin-bottom: 20px;
 }
 
-.resume-button button {
-  background-color: #ff6f61;
+/* Styling the button */
+.resume-button a button {
+  background-color: #ff6f61; /* Pink button */
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -220,7 +226,7 @@ body {
   cursor: pointer;
 }
 
-.resume-button button:hover {
-  background-color: #ff85a2;
+.resume-button a button:hover {
+  background-color: #ff85a2; /* Slightly lighter pink on hover */
 }
 
