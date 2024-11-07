@@ -1,4 +1,4 @@
-/* Basic reset */
+/* Basic Reset */
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +8,7 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #f7e5e5; /* Light pink background */
+  color: #333;
 }
 
 /* Navbar styles */
@@ -34,10 +35,11 @@ body {
   text-decoration: none;
   color: #333;
   font-size: 18px;
+  transition: color 0.3s;
 }
 
 .navbar a:hover {
-  color: #ff6f61;
+  color: #ff6f61; /* Darker pink on hover */
 }
 
 /* Home Page Content Styling */
@@ -46,7 +48,7 @@ body {
   align-items: center;
   justify-content: space-between;
   max-width: 1200px;
-  margin: 100px auto 0; /* Centers content and adds space from navbar */
+  margin: 100px auto 0;
   padding: 20px;
   gap: 20px;
 }
@@ -79,7 +81,7 @@ body {
   box-shadow: 0px 4px 8px rgba(255, 133, 162, 0.4);
 }
 
-/* About Page Styles */
+/* About Page Styling */
 .about-container {
   max-width: 800px;
   margin: 40px auto;
@@ -129,7 +131,7 @@ body {
 }
 
 .about-photo img {
-  max-width: 200px; /* Moderate size for a nice visual balance */
+  max-width: 200px;
   height: auto;
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(255, 133, 162, 0.4);
@@ -170,3 +172,4 @@ body {
     max-width: 150px;
   }
 }
+
