@@ -40,7 +40,46 @@ body {
   color: #ff6f61;
 }
 
-/* About Me Styles */
+/* Home Page Content Styling */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 100px auto 0; /* Centers content and adds space from navbar */
+  padding: 20px;
+  gap: 20px;
+}
+
+.text-section {
+  flex: 1;
+  color: #5f5f5f;
+}
+
+.text-section h1 {
+  font-size: 2.5em;
+  color: #ff85a2;
+  margin-bottom: 15px;
+}
+
+.text-section p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.image-section {
+  flex: 1;
+  text-align: center;
+}
+
+.image-section img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(255, 133, 162, 0.4);
+}
+
+/* About Page Styles */
 .about-container {
   max-width: 800px;
   margin: 40px auto;
@@ -104,20 +143,27 @@ body {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .about-container {
-    padding: 15px;
+  .container {
+    flex-direction: column;
+    text-align: center;
   }
 
+  .text-section h1,
   .about-header {
     font-size: 2em;
   }
 
+  .text-section p,
   .about-intro {
     font-size: 1em;
   }
 
   .about-basics th, .about-basics td {
     padding: 8px 10px;
+  }
+
+  .image-section img {
+    max-width: 70%;
   }
 
   .about-photo img {
