@@ -9,7 +9,6 @@ body {
   font-family: Arial, sans-serif;
   background-color: #f7e5e5; /* Light pink background */
   color: #333;
-  padding-top: 60px; /* Added space for navbar */
 }
 
 /* Navbar styles */
@@ -196,58 +195,45 @@ h1.projects-title {
 /* Contact Page Styling */
 .contact-page {
   text-align: center;
-  max-width: 800px;
-  margin: 100px auto; /* Centering the contact content */
-  padding: 20px;
-  background-color: #fff0f5;
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(255, 133, 162, 0.3);
+  padding: 50px 20px;
 }
 
 .contact-page h1 {
   font-size: 2.5em;
   color: #ff85a2;
-  margin-bottom: 15px;
-}
-
-.contact-page p {
-  font-size: 1.1em;
-  color: #5f5f5f;
   margin-bottom: 20px;
 }
 
-/* Contact Table Styling */
-.contact-table {
-  width: 100%;
-  margin-top: 15px;
-  border-collapse: collapse;
-  margin-left: auto;
-  margin-right: auto;
+.contact-page p {
+  font-size: 1.2em;
+  color: #5f5f5f;
+  margin-bottom: 30px;
 }
 
-.contact-table th,
-.contact-table td {
-  padding: 10px 12px;
-  border: 1px solid #ffd1dc;
-  text-align: left;
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
-.contact-table th {
-  background-color: #ffdee8;
-  color: #ff85a2;
-}
-
-.contact-table td {
-  background-color: #fff;
-}
-
-.contact-table a {
-  text-decoration: none;
+.contact-item {
+  font-size: 1.2em;
   color: #333;
 }
 
-.contact-table a:hover {
+.contact-item a {
+  text-decoration: none;
   color: #ff6f61;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+.contact-item strong {
+  font-weight: bold;
+  color: #ff85a2;
 }
 
 /* Responsive adjustments */
