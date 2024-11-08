@@ -9,6 +9,7 @@ body {
   font-family: Arial, sans-serif;
   background-color: #f7e5e5; /* Light pink background */
   color: #333;
+  padding-top: 60px; /* Added space for navbar */
 }
 
 /* Navbar styles */
@@ -25,7 +26,6 @@ body {
 .navbar ul {
   list-style-type: none;
   padding: 0;
-  text-align: center;
 }
 
 .navbar li {
@@ -128,6 +128,24 @@ body {
   background-color: #fff;
 }
 
+.about-photo {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.about-photo img {
+  max-width: 200px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(255, 133, 162, 0.4);
+}
+
+.about-photo p {
+  color: #ff85a2;
+  font-style: italic;
+  margin-top: 5px;
+}
+
 /* Projects Page Styles */
 h1.projects-title {
   text-align: center;
@@ -175,55 +193,57 @@ h1.projects-title {
   font-size: 14px;
 }
 
-/* Contact Page Styles */
+/* Contact Page Styling */
 .contact-page {
-  max-width: 600px;
-  margin: 100px auto;
+  text-align: center;
+  max-width: 800px;
+  margin: 100px auto; /* Centering the contact content */
   padding: 20px;
   background-color: #fff0f5;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(255, 133, 162, 0.3);
-  text-align: center;
 }
 
 .contact-page h1 {
-  font-size: 2rem;
+  font-size: 2.5em;
   color: #ff85a2;
   margin-bottom: 15px;
 }
 
 .contact-page p {
-  font-size: 1rem;
+  font-size: 1.1em;
   color: #5f5f5f;
   margin-bottom: 20px;
 }
 
+/* Contact Table Styling */
 .contact-table {
   width: 100%;
-  margin-top: 10px;
+  margin-top: 15px;
   border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contact-table th,
 .contact-table td {
-  padding: 12px;
-  border-bottom: 1px solid #ffd1dc;
+  padding: 10px 12px;
+  border: 1px solid #ffd1dc;
   text-align: left;
 }
 
 .contact-table th {
+  background-color: #ffdee8;
   color: #ff85a2;
-  font-weight: bold;
 }
 
 .contact-table td {
-  color: #333;
+  background-color: #fff;
 }
 
 .contact-table a {
-  color: #ff69b4;
   text-decoration: none;
-  transition: color 0.3s;
+  color: #333;
 }
 
 .contact-table a:hover {
@@ -237,16 +257,30 @@ h1.projects-title {
     text-align: center;
   }
 
-  .contact-page {
-    margin: 120px auto;
+  .text-section h1,
+  .about-header {
+    font-size: 2em;
   }
 
-  .navbar a {
-    font-size: 16px;
+  .text-section p,
+  .about-intro {
+    font-size: 1em;
   }
 
-  .contact-table th,
-  .contact-table td {
-    padding: 8px;
+  .about-basics th,
+  .about-basics td {
+    padding: 8px 10px;
+  }
+
+  .image-section img {
+    max-width: 70%;
+  }
+
+  .about-photo img {
+    max-width: 150px;
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr;
   }
 }
